@@ -9,31 +9,49 @@
         <module name="demo" />
         <module name="fastdfs-client-java" />
         <module name="gmall-api" />
+        <module name="gmall-cart-service" />
+        <module name="gmall-cart-web" />
         <module name="gmall-common-util" />
+        <module name="gmall-hello-web" />
+        <module name="gmall-item-web" />
+        <module name="gmall-manage-redisson" />
         <module name="gmall-manage-service" />
         <module name="gmall-manage-web" />
+        <module name="gmall-search-service" />
+        <module name="gmall-search-util" />
+        <module name="gmall-search-web" />
         <module name="gmall-service-util" />
         <module name="gmall-user" />
         <module name="gmall-user-service" />
         <module name="gmall-user-web" />
         <module name="gmall-web-util" />
         <module name="hello" />
+        <module name="small-search-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
       <module name="fastdfs-client-java" target="1.6" />
       <module name="gmall-api" target="1.8" />
+      <module name="gmall-cart-service" target="1.8" />
+      <module name="gmall-cart-web" target="1.8" />
       <module name="gmall-common-util" target="1.8" />
+      <module name="gmall-hello-web" target="1.8" />
+      <module name="gmall-item-web" target="1.8" />
+      <module name="gmall-manage-redisson" target="1.8" />
       <module name="gmall-manage-service" target="1.8" />
       <module name="gmall-manage-web" target="1.8" />
       <module name="gmall-parent" target="1.8" />
+      <module name="gmall-search-service" target="1.8" />
+      <module name="gmall-search-util" target="1.8" />
+      <module name="gmall-search-web" target="1.8" />
       <module name="gmall-service-util" target="1.8" />
       <module name="gmall-user" target="1.8" />
       <module name="gmall-user-service" target="1.8" />
       <module name="gmall-user-web" target="1.8" />
       <module name="gmall-web-util" target="1.8" />
       <module name="hello" target="1.8" />
+      <module name="small-search-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

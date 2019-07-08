@@ -18,7 +18,7 @@ public class PmsBaseCatalog1 implements Serializable {
     @Column
     private String name;
 
-/*    @Transient
+    @Transient
     private List<PmsBaseCatalog2> catalog2s;
 
     public List<PmsBaseCatalog2> getCatalog2s() {
@@ -27,7 +27,7 @@ public class PmsBaseCatalog1 implements Serializable {
 
     public void setCatalog2s(List<PmsBaseCatalog2> catalog2s) {
         this.catalog2s = catalog2s;
-    }*/
+    }
 
     public String getId() {
         return id;

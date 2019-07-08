@@ -50,6 +50,7 @@ public class SpuController {
     @ResponseBody
     public String saveSpuInfo(@RequestBody PmsProductInfo pmsProductInfo){
 
+        // pmsProductInfo.setProductName(pmsProductInfo.getSpuName());
         spuService.saveSpuInfo(pmsProductInfo);
 
 

@@ -9,6 +9,7 @@ import com.atguigu.gmall.service.AttrService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.HashSet;
 import java.util.List;
 
 @Service
@@ -63,5 +64,14 @@ public class AttrServiceImpl implements AttrService {
             // 重新添加一次页面传递的属性值集合
         }
 
+    }
+
+    @Override
+    public List<PmsBaseAttrInfo> getAttrValueByValueIds(HashSet<String> valueIdSet) {
+
+        String valueIdsStr = StringUtils.join(valueIdSet, ",");
+        List<PmsBaseAttrInfo> pmsBaseAttrInfos = pmsBaseAttrInfoMapper.selectAttrValueByValueIds(valueIdsStr);
+
+        return pmsBaseAttrInfos;
     }
 }

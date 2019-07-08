@@ -29,11 +29,21 @@ public class PmsProductInfo implements Serializable {
     private  String catalog3Id;
 
     @Transient
+    private String spuName;
+
+    @Transient
     private List<PmsProductSaleAttr> spuSaleAttrList;
 
     @Transient
     private List<PmsProductImage> spuImageList;
 
+    public String getSpuName() {
+        return spuName;
+    }
+
+    public void setSpuName(String spuName) {
+        this.spuName = spuName;
+    }
 
     public String getProductName() {
         return productName;

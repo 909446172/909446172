@@ -60,7 +60,7 @@ public class SpuServiceImpl implements SpuService {
             for (PmsProductSaleAttrValue pmsProductSaleAttrValue : spuSaleAttrValueList) {
                 pmsProductSaleAttrValue.setProductId(spuId);
                 if(StringUtils.isBlank(pmsProductSaleAttrValue.getSaleAttrId())){
-                    String sale_attr_id = pmsProductSaleAttrValue.getSaleAttrId();// 销售属性id的外键，是字典表的主键，而不是spu销售属性表的主键
+                    String sale_attr_id = pmsProductSaleAttr.getSaleAttrId();// 销售属性id的外键，是字典表的主键，而不是spu销售属性表的主键
                     pmsProductSaleAttrValue.setSaleAttrId(sale_attr_id);
                 }
                 pmsProductSaleAttrValueMapper.insertSelective(pmsProductSaleAttrValue);
@@ -96,6 +96,7 @@ public class SpuServiceImpl implements SpuService {
         
         return pmsProductSaleAttrs;
     }
+
 
     @Override
     public List<PmsProductImage> spuImageList(String spuId) {
